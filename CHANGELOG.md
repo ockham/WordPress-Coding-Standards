@@ -8,6 +8,18 @@ This projects adheres to [Semantic Versioning](https://semver.org/) and [Keep a 
 
 _No documentation available about unreleased changes as of yet._
 
+## [2.2.1] - 2020-02-02
+
+### Added
+- Metrics to the `WordPress.Arrays.CommaAfterArrayItem` sniff. These can be displayed using `--report=info`.
+
+### Changed
+- The recommended version of the suggested DealerDirect PHPCS Composer plugin is now `^0.6`.
+
+### Fixed
+- `WordPress.PHP.NoSilencedErrors`: depending on the custom properties set, the metrics would be different.
+- `WordPress.WhiteSpace.ControlStructureSpacing`: fixed undefined index notice for closures with `use`.
+- `WordPress.WP.GlobalVariablesOverride`: fixed undefined offset notice when the `treat_files_as_scoped` property would be set to `true`.
 
 ## [2.2.0] - 2019-11-11
 
